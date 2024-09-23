@@ -1,0 +1,28 @@
+<script>
+    let price=parseFloat(prompt('enter mango prize'));
+    if(price>=0&&price<=200){
+
+        console.log(`mango price : ${price}`)
+        let dis=price*7/100;
+        console.log(`7% discount amount :${dis}`)
+        let minus=price-dis;
+        console.log(`7% discount final total : ${minus}`);
+
+    }else if(price>=201&&price<=400){
+        console.log(`mango price : ${price}`)
+    let dis=price*10/100;
+    console.log(`10% discount amount :${dis}`)
+    let minus=price-dis;
+    console.log(`10% discount final total : ${minus}`);
+
+    }else if(price>=401&&price<=600){
+        console.log(`mango price : ${price}`);
+        let dis=price*15/100;
+        console.log(`15% discount amount :${dis}`);
+        let minus=price-dis;
+        console.log(`15% discount final total : ${minus}`);
+
+    }else{
+        console.log(`no discount ${price}`);
+    }
+</script>
